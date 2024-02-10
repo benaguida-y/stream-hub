@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Stream HUB iPTV</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/logo/alt-logo.svg">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- BOOTSTRAP -->
@@ -123,6 +125,7 @@
               aria-label="Close"
             ></button>
             <img
+              id="side-logo"
               class="mt-3"
               src="images/logo/sidebar-logo.svg"
               alt="Logo"
@@ -131,6 +134,7 @@
           </div>
           <div id="offcnvs-body" class="offcanvas-body">
             <ul
+              id="nav-main"
               class="navbar-nav justify-content-end flex-grow-1 pt-5 text-uppercase"
             >
               <li class="nav-item fs-5 px-2 py-2">
@@ -154,10 +158,36 @@
                   >Contact</a
                 >
               </li>
+
               <!-- <li class="nav-item fs-5 px-3">
                 <a id="free-trial-btn" class="nav-link" href="#">Free-Trial</a>
               </li> -->
             </ul>
+            <img id="sidebar-alt-logo" src="images/logo/alt-logo.svg" alt="StreamHUB" />
+            <ul id="nav-alt"
+              class="navbar-nav justify-content-start flex-grow-1 pt-5 text-uppercase"
+            >
+              <li class="nav-item fs-5 px-1 py-2">
+                <a id="nv-itms" class="nav-link" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house"></i></a
+                >
+              </li>
+              <li class="nav-item fs-5 px-1 py-2">
+                <a id="nv-itms" class="nav-link" href="#pricing"><i class="fa-solid fa-coins"></i></a>
+              </li>
+              <li class="nav-item fs-5 px-1 py-2">
+                <a id="nv-itms" class="nav-link" href="#services"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+              </li>
+              <li class="nav-item fs-5 px-1 py-2">
+                <!-- Button trigger modal -->
+                <a
+                  id="nv-itms"
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  ><i class="fa-solid fa-paper-plane "></i></a
+                >
+              </li>
           </div>
         </div>
       </div>
@@ -689,7 +719,9 @@
     <!-- BACK TO TOP -->
     <div class="back-top">
       <button class="back-button">
-        <a class="back-button-a" href="#">&#11165;</a>
+        <a class="back-button-a" href="#"
+          ><i class="fa-solid fa-angle-up"></i
+        ></a>
       </button>
     </div>
     <!-- BACK TO TOP END -->

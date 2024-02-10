@@ -23,6 +23,14 @@ body {
   display: none;
 }
 
+#sidebar-alt-logo {
+  display: none;
+}
+
+#nav-alt {
+  display: none;
+}
+
 #navbar {
   background-color: transparent;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
@@ -57,6 +65,31 @@ body {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+@media only screen and (max-width: 400px) {
+  #offcanvasDarkNavbar {
+    width: 65px;
+    padding-top: 25px;
+  }
+
+  #nav-main {
+    display: none;
+  }
+
+  #side-logo {
+    display: none;
+  }
+
+  #nav-alt {
+    display: block;
+  }
+
+  #sidebar-alt-logo {
+    padding: 5px 0;
+    height: 50px;
+    display: block;
+  }
+}
+
 #pop-up-cls-btn {
   color: white;
   font-weight: 700;
@@ -79,6 +112,7 @@ body {
   #main-logo {
     display: none;
   }
+
   #alt-logo {
     padding: 5px 0;
     height: 50px;
@@ -201,11 +235,13 @@ body {
   box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.09);
   transition: 0.3s;
 }
+
 @media only screen and (max-width: 480px) {
   .single-pricing {
     margin-bottom: 30px;
   }
 }
+
 .single-pricing:hover {
   box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.628);
   z-index: 100;
@@ -398,7 +434,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 352px) {
   #channels {
     grid-template-columns: 1fr;
   }
@@ -423,8 +459,8 @@ body {
 }
 
 .back-button {
-  min-height: 60px;
-  min-width: 60px;
+  height: 60px;
+  width: 60px;
   border: 2px solid black;
   border-radius: 50%;
   cursor: pointer;
@@ -444,6 +480,14 @@ body {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: x-large;
+}
+
+@media only screen and (max-width: 400px) {
+  .back-button {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
 }
 
 /* BACK BUTTON END */
