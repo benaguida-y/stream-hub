@@ -39,15 +39,30 @@ body {
 }
 
 #nv-itms {
+  width: fit-content;
   font-weight: 500;
-  color: aliceblue;
+  color: white;
   transition: all 0.5s;
   cursor: pointer;
+  /* NEWLY ADDED */
+  transition: background-size 0.2s ease-in-out;
+  text-decoration: none;
+  background-image: linear-gradient(#d9534f, #d9534f);
+  background-size: 0% 0.1em;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
 }
 
-#nv-itms:hover {
+#nv-itms:hover,
+/* NEWLY ADDED */
+#nv-itms:focus,
+#nav-itms:active {
   color: #d9534f;
-  transition: all 0.5s;
+  /* NEWLY ADDED */
+  background-size: 100% 0.1em;
+  background-position-x: 0%;
+  transition: all 0.2s;
 }
 
 #offcanvasDarkNavbar {
@@ -90,7 +105,7 @@ body {
   }
 }
 
-#pop-up-cls-btn {
+/* #pop-up-cls-btn {
   color: white;
   font-weight: 700;
   width: 100px;
@@ -106,7 +121,7 @@ body {
   color: #d9534f;
   transform: scale(0.99);
   transition: all 0.5s ease-in-out;
-}
+} */
 
 @media only screen and (max-width: 350px) {
   #main-logo {
